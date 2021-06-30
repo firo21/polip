@@ -1,0 +1,28 @@
+.contenedor-completo{
+    /*Le ponemos flex para que se alinean ambas mitades*/
+    display: flex;
+}
+.contenedor-mitad{
+    width: 50%;
+}
+.contenedor-mitad h2{
+    /*Como en formulario-contacto centra el texto, no es necesario centrarlo aquí*/
+    color: #fff;
+}
+@media (min-width: 480px){
+    .contenedor-completo{
+        display: block;
+    }
+    .contenedor-mitad{
+        width: 100%;
+    }
+}
+/*Hasta antes de 768px (infinito-768) se aplicará la .cont-mitad en 50%*/
+@media (min-width: 768px){
+    .contenedor-completo{
+        display: flex;
+    }
+    .contenedor-mitad{
+        width: 50%;
+    }
+}

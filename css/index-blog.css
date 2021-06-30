@@ -1,0 +1,19 @@
+#index-blog h3,h4{
+	text-align: center;
+}
+/*display:flex Pone todas la imagenes esten en una sola linea*/
+#index-blog .contenedor{
+	display: flex;
+	/*Para poner al cetro todo la linea de imagenes*/
+	justify-content: center;
+	/*Los elemetos que no caben se bajen*/
+	flex-wrap: wrap;
+}
+#index-blog article{
+	/*Para que esten separados*/
+	margin: 15px;
+}
+#index-blog img{
+	width: 100%;
+	max-width: 280px;
+}

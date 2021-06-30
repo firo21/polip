@@ -1,0 +1,71 @@
+#banner{
+    /*Para que comience de donde termina el header*/
+    margin-top: 50px;
+    position: relative;
+}
+#banner img{
+    /*Para que la imagen se se vaya ajustando al tamaño de la pantalla*/
+    width: 100%;
+    height: 100%;
+}
+#banner .contenedor{
+    position: absolute;
+    /*Subimos las letras*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    color: #fff;
+}
+#banner h2{
+    font-size: 28px;
+}
+#banner a{
+    display: inline-block;
+    width: 110px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px 10px;
+    border: 3px solid #fff;
+    text-align: center;
+}
+#banner h3{
+    color: #ef9b0f;
+}
+#banner a:hover{
+    background: rgba(51,51,51,0.5);
+    color: #ef9b0f;
+    border: 3px solid #ef9b0f;
+}
+@media (min-width: 480px){
+    #banner h2{
+        font-size: 40px;
+    }
+    #banner a{
+        margin-top: 25px;
+    }
+    #banner .contenedor{
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+@media (min-width: 768px){
+    #banner{
+        height: 400px;
+        /*Para que no se encime la imagen con el texto*/
+        overflow: hidden;
+    }
+    /*Para que se vaya ajustando la imagen*/
+    #banner img{
+        height: auto;
+        margin-top: -100px; 
+    }
+}
+@media (min-width: 1024px){
+    /*Para que se vaya ajustando la imagen con negativo para que sube y eso hace como que se ajusta*/
+    #banner img{
+        margin-top: -150px; 
+    }
+    #banner .contenedor{
+        transform: translateX(-50%) translateY(-10%);
+    }
+}
